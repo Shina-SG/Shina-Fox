@@ -39,6 +39,18 @@ tab.tabbrowser-tab *{
 }
 }
 
+@media (prefers-color-scheme: dark) {
+#navigator-toolbox  {
+  background: #1a1a1a !important;
+}
+}
+
+@media (prefers-color-scheme: light)  {
+#navigator-toolbox  {
+  background: #e6e6e6 !important;
+}
+}
+
 #PersonalToolbar  {
   background: transparent !important;
 }
