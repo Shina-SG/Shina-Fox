@@ -1,6 +1,14 @@
+<div align="center">
+
 # Shina Fox - Make Firefox a Cozy Home
+<a href="https://discord.gg/txgKQUvwnY">Shina's Discord</a>
 
 Welcome to Shina Fox, a project that seeks to transform your Firefox experience into something homely and comfortable. At the moment, it primarily focuses on theme development. Enjoy!
+
+
+
+</div>
+
 
 ![](media/t1jwYxBFR7SimysiWYN5ZQmdgKSREYETuzEXhMXHdB9NC02gw6ghjRp4twz1Oryt9gCkmkHVqUvg7M7yGNfp3MreQrlYa6QcLrllA5wJIZaocdStB54gTQgujVdXBoFocvYUubOxLomxQwvrRhhZH4kzDANTPGM2spoUSymrRo7BheOuTOgMMgSACLRjCCUNUd3KlVqr9yFcloiCSgzZQ0LssMpm5URnUPwk0278M7nkwcLVYYJUJPxmyK.png)
 ![](media/IIXLiV9iZrsHJlRzcWqpOQPu5nTI2kVheTz6iZ8ynnwJb8mc2Xdyrc8d6zkpbRRn6a4OEdL02tai6EIM0mzgbxWNmKjv3zY5oJUvGHddEl8uwE7RVPYOKUsfphA26KONO3lw30RpqHBpO24kbP1RooZDG7IRRjf6yrlrOOnBKIf3dFmfIr5q5FptuF6QOiSgmOP8a3FrmnLWM8SAIoB9Qq1cd93rhPLYVw3aXq6VhJuPpMxnhLEuYkDQf7.png)
