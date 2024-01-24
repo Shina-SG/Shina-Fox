@@ -65,7 +65,7 @@ Welcome to Shina Fox, a project that seeks to transform your Firefox experience 
 | `toolkit.legacyUserProfileCustomizations.stylesheets` | `true` |
 | `widget.gtk.ignore-bogus-leave-notify` | `1`  |
 | `floorp.browser.user.interface` (Only if you are using Floorp) | `1` |
-| `browser.newtabpage.activity-stream.floorp.newtab.backdrop.blur.disable` (Only if you are using Floorp) | `1` |
+| `browser.newtabpage.activity-stream.floorp.newtab.backdrop.blur.disable` (Only if you are using Floorp) | `true` |
 
 ##### Step 3: Theme Selection 🎨
 - In the URL bar, type `about:addons`
