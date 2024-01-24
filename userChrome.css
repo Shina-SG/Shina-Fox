@@ -10,7 +10,6 @@
 /* Background Color */
 
 @media (prefers-color-scheme: dark) {
-#nav-bar,
 #navigator-toolbox,
 #sidebar-box,
 #tabbrowser-tabbox,
@@ -25,7 +24,6 @@ tab.tabbrowser-tab *{
   
 }
 @media (prefers-color-scheme: light)  {
-#nav-bar,
 #navigator-toolbox,
 #sidebar-box,
 #tabbrowser-tabbox,
@@ -51,7 +49,8 @@ tab.tabbrowser-tab *{
 }
 }
 
-#PersonalToolbar  {
+#PersonalToolbar,
+#nav-bar  {
   background: transparent !important;
 }
 
@@ -77,6 +76,13 @@ tab.tabbrowser-tab *{
 #navigator-toolbox {
   border-bottom: var(--firefoxcss-top-bar-border-bottom-size) solid
     var(--firefoxcss-top-bar-border-bottom-color) !important;
+}
+
+/*------------------------------------------------*/
+/* Remove the all tab and new tab button */
+#alltabs-button,
+#tabs-newtab-button {
+  display: none !important;
 }
 
 /*------------------------------------------------*/
