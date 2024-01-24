@@ -434,6 +434,12 @@ toolbar:not([customizing]) > #nav-bar-customization-target {
   position: static !important;;
 }
 
+#nav-bar-customization-target,
+#PanelUI-button {
+  position: relative  !important;
+  z-index: 3  !important;
+}
+
 /*------------------------------------------------*/
 /* Make active tab to hidden tab */
 
