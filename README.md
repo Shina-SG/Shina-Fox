@@ -14,6 +14,10 @@ Welcome to Shina Fox, a project that seeks to transform your Firefox experience 
 ![](media/IIXLiV9iZrsHJlRzcWqpOQPu5nTI2kVheTz6iZ8ynnwJb8mc2Xdyrc8d6zkpbRRn6a4OEdL02tai6EIM0mzgbxWNmKjv3zY5oJUvGHddEl8uwE7RVPYOKUsfphA26KONO3lw30RpqHBpO24kbP1RooZDG7IRRjf6yrlrOOnBKIf3dFmfIr5q5FptuF6QOiSgmOP8a3FrmnLWM8SAIoB9Qq1cd93rhPLYVw3aXq6VhJuPpMxnhLEuYkDQf7.png)
 
 
+> [!TIP]
+> Floorp is recomended for the best expercience (Right sidebar, Milti-page, )
+
+
 ## Set-up Guide 🛠️
 
 ##### Step 1: Sidebery Configuration 🦔
