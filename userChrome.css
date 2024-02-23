@@ -49,6 +49,7 @@ tab.tabbrowser-tab *{
 }
 }
 
+/* Makes the differently colored area around the URL bar transparent */
 #PersonalToolbar,
 #nav-bar  {
   background: transparent !important;
@@ -58,12 +59,14 @@ tab.tabbrowser-tab *{
 /* NAV BAR */
 
 /* Auto hide icons on the Nav Bar */
+/* Handles the fade-out animation */
 #nav-bar > #nav-bar-customization-target *:not(#urlbar-container):not(#urlbar-container *),
 #PanelUI-button {
     opacity: 0 !important;
     transition: opacity 0.7s ease !important;
 }
 
+/* Handles the fade-in animation */
 #nav-bar:hover > #nav-bar-customization-target *:not(#urlbar-container):not(#urlbar-container *),
 #nav-bar:hover > #PanelUI-button  {
     opacity: 1 !important;
@@ -79,7 +82,7 @@ tab.tabbrowser-tab *{
 }
 
 /*------------------------------------------------*/
-/* Remove the all tab and new tab button */
+/* Remove the "All Tabs" and "New Tab" button to the right of tabs */
 #alltabs-button,
 #tabs-newtab-button {
   display: none !important;
@@ -402,13 +405,13 @@ toolbar:not([customizing]) > #nav-bar-customization-target {
     --NavbarHeightSmall: calc(var(--TabsHeight) + var(--TabsBorder))
 }
 
+/* Moves the nav-bar over up over the tab bar to hide them */
 #nav-bar {
     margin-top:calc(var(--TabsHeight) * -1px - var(--TabsBorder) * 1px)!important;
     height: calc((var(--TabsHeight) * 1px + var(--TabsBorder) * 1px) + 0px)
 }
 
-
-
+/* Adds left margin to nav-bar to make a spot for the Firefox View button */
 #nav-bar {
     margin-left: 35px !important;
 }
@@ -418,7 +421,7 @@ toolbar:not([customizing]) > #nav-bar-customization-target {
     flex: auto !important;
 }
 
-
+/* Different logic if screen is skinnier than 100px */
 @media screen and (max-width:100px) {
     #TabsToolbar {
         margin-right: 0 !important;
@@ -443,6 +446,7 @@ toolbar:not([customizing]) > #nav-bar-customization-target {
 /*------------------------------------------------*/
 /* Make active tab to hidden tab */
 
+/* Hides all tabs but the selected tab */
 tab:not([selected="true"]), 
 [part="overflow-start-indicator"], 
 [part="overflow-end-indicator"], 
@@ -456,6 +460,7 @@ tab:not([selected="true"]),
     display: none !important;
 }
 
+/* Shrinks the selected tab to be a 37x37px square */
 .tabbrowser-tab[selected="true"] {
     min-width: 37px !important;
     max-width: 37px !important;
@@ -472,6 +477,7 @@ tab,
     box-shadow: none !important;
 }
 
+/* Changes the size of the tab icon */
 .tab-icon-image  { 
     height: 32px !important; 
     width: 32px !important; 
@@ -513,13 +519,12 @@ tab,
     display: none !important;
 }
 
-
-
 /*============================================================================================*/
 /* EXTENSION */
 
 /* Make extensions looks minimal */
 
+/* Change "Manage Extensions" row at bottom of extensions menu to "• • •" */
 #unified-extensions-view #unified-extensions-manage-extensions .toolbarbutton-text::before {
     content: "• • •";
     font-size: 15px;
@@ -528,21 +533,24 @@ tab,
     text-align: center;
 }
 
+/* Shrinks width of box to only take necessary width */
 #unified-extensions-panel #unified-extensions-view {
     width: 100% !important;
-}
+} 
 
+/* Shrink icon size, and change number of extensions per row */
 #unified-extensions-view{
     --uei-icon-size: 22px;
     --firefoxcss-number-of-extensions-in-a-row: 4;
 }
 
-
+/* Remove text and buttons related to extensions in menu */
 #unified-extensions-view .unified-extensions-item-menu-button.subviewbutton,
 #unified-extensions-view .unified-extensions-item-action-button .unified-extensions-item-contents{
     display:none !important;
 }
 
+/* Add padding between box edges and extension icons */
 #unified-extensions-view .panel-subview-body {
     padding: 10px !important;
 }
@@ -552,6 +560,7 @@ tab,
     margin-inline-end: 0px !important;
 }
 
+/* Make the extension icons actually conform to a grid */
 #unified-extensions-view #overflowed-extensions-list,
 #unified-extensions-view #unified-extensions-area,
 #unified-extensions-view .unified-extensions-list {
@@ -580,6 +589,7 @@ tab,
     margin: auto !important;
 }
 
+/* Handle animations for selecting the box and the box returning to neutral state */
 #main-window #urlbar {
     z-index: 9999 !important;
     width: 100% !important;
@@ -600,6 +610,7 @@ tab,
     transition: width 0.3s ease, left 0.3s ease, margin-top 0.3s ease, margin-left 0.3s ease, margin-right 0.3s ease;
 }
 
+/* Adjust border radius of URL bar and inner elements */
 #urlbar-background,
 #urlbar-input-container {
     --toolbarbutton-border-radius: calc(var(--urlbar-min-height) / 2);
@@ -609,6 +620,7 @@ tab,
     --urlbar-icon-border-radius: calc(var(--toolbarbutton-border-radius) - 1px);
 }
 
+/* Align text within the URL bar */
 #urlbar:not([focused]) #urlbar-input {
     text-align: center !important;
 }
@@ -752,16 +764,19 @@ tab,
   font-size: 0.7em;
 }
 
+/* Make new dots mostly transparent */
 #identity-box::after,
 #page-action-buttons::before {
   opacity: 0.2;
 }
 
+/* Rotate left set of dots to be vertical */
 #identity-box::after {
   transform: rotate(90deg);
   left: 4px;
 }
 
+/* Rotate right set of dots to be vertical */
 #page-action-buttons::before {
   transform: rotate(-90deg);
   right: 4px;
@@ -807,10 +822,12 @@ tab,
   background-color: var(--firefoxcss-item-bg-color) !important;
 }
 
+/* Zoom button color when hovered */
 #urlbar-zoom-button:hover {
   background-color: var(--firefoxcss-urlbar-zoom-button) !important;
 }
 
+/* Round the corners of the highlighting present when hovering over URL bar icons */
 #urlbar-input-container #identity-box > .identity-box-button,
 #tracking-protection-icon-container,
 #urlbar-go-button,
@@ -819,6 +836,7 @@ tab,
   border-radius: 8px !important;
 }
 
+/* Remove the Tracking Protection icon */
 #urlbar-go-button,
 #tracking-protection-icon-container
 {
@@ -917,9 +935,10 @@ tab,
 
 /* Expand Side bar on hover */
 
+/* "3c078156-979c-498b-8990-85f7987dd929" is the extension ID for Sidebery */
 #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] {
-  --sidebar-width: 40px;
-  --sidebar-hover-width: 512px;
+  --sidebar-width: 40px; /* Sidebar collapsed width */
+  --sidebar-hover-width: 512px; /* Sidebar hover width */
   position: relative;
   min-width: var(--sidebar-width) !important;
   width: var(--sidebar-width) !important;
