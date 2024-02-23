@@ -524,6 +524,7 @@ tab,
 
 /* Make extensions looks minimal */
 
+/* Change "Manage Extensions" row at bottom of extensions menu to "• • •" */
 #unified-extensions-view #unified-extensions-manage-extensions .toolbarbutton-text::before {
     content: "• • •";
     font-size: 15px;
@@ -532,21 +533,24 @@ tab,
     text-align: center;
 }
 
+/* Shrinks width of box to only take necessary width */
 #unified-extensions-panel #unified-extensions-view {
     width: 100% !important;
-}
+} 
 
+/* Shrink icon size, and change number of extensions per row */
 #unified-extensions-view{
     --uei-icon-size: 22px;
     --firefoxcss-number-of-extensions-in-a-row: 4;
 }
 
-
+/* Remove text and buttons related to extensions in menu */
 #unified-extensions-view .unified-extensions-item-menu-button.subviewbutton,
 #unified-extensions-view .unified-extensions-item-action-button .unified-extensions-item-contents{
     display:none !important;
 }
 
+/* Add padding between box edges and extension icons */
 #unified-extensions-view .panel-subview-body {
     padding: 10px !important;
 }
@@ -556,6 +560,7 @@ tab,
     margin-inline-end: 0px !important;
 }
 
+/* Make the extension icons actually conform to a grid */
 #unified-extensions-view #overflowed-extensions-list,
 #unified-extensions-view #unified-extensions-area,
 #unified-extensions-view .unified-extensions-list {
@@ -584,6 +589,7 @@ tab,
     margin: auto !important;
 }
 
+/* Handle animations for selecting the box and the box returning to neutral state */
 #main-window #urlbar {
     z-index: 9999 !important;
     width: 100% !important;
@@ -604,6 +610,7 @@ tab,
     transition: width 0.3s ease, left 0.3s ease, margin-top 0.3s ease, margin-left 0.3s ease, margin-right 0.3s ease;
 }
 
+/* Adjust border radius of URL bar and inner elements */
 #urlbar-background,
 #urlbar-input-container {
     --toolbarbutton-border-radius: calc(var(--urlbar-min-height) / 2);
@@ -613,6 +620,7 @@ tab,
     --urlbar-icon-border-radius: calc(var(--toolbarbutton-border-radius) - 1px);
 }
 
+/* Align text within the URL bar */
 #urlbar:not([focused]) #urlbar-input {
     text-align: center !important;
 }
@@ -756,16 +764,19 @@ tab,
   font-size: 0.7em;
 }
 
+/* Make new dots mostly transparent */
 #identity-box::after,
 #page-action-buttons::before {
   opacity: 0.2;
 }
 
+/* Rotate left set of dots to be vertical */
 #identity-box::after {
   transform: rotate(90deg);
   left: 4px;
 }
 
+/* Rotate right set of dots to be vertical */
 #page-action-buttons::before {
   transform: rotate(-90deg);
   right: 4px;
@@ -811,10 +822,12 @@ tab,
   background-color: var(--firefoxcss-item-bg-color) !important;
 }
 
+/* Zoom button color when hovered */
 #urlbar-zoom-button:hover {
   background-color: var(--firefoxcss-urlbar-zoom-button) !important;
 }
 
+/* Round the corners of the highlighting present when hovering over URL bar icons */
 #urlbar-input-container #identity-box > .identity-box-button,
 #tracking-protection-icon-container,
 #urlbar-go-button,
@@ -823,6 +836,7 @@ tab,
   border-radius: 8px !important;
 }
 
+/* Remove the Tracking Protection icon */
 #urlbar-go-button,
 #tracking-protection-icon-container
 {
@@ -921,9 +935,10 @@ tab,
 
 /* Expand Side bar on hover */
 
+/* "3c078156-979c-498b-8990-85f7987dd929" is the extension ID for Sidebery */
 #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] {
-  --sidebar-width: 40px;
-  --sidebar-hover-width: 512px;
+  --sidebar-width: 40px; /* Sidebar collapsed width */
+  --sidebar-hover-width: 512px; /* Sidebar hover width */
   position: relative;
   min-width: var(--sidebar-width) !important;
   width: var(--sidebar-width) !important;
