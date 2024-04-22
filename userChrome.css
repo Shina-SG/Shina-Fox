@@ -867,6 +867,12 @@ tab,
     opacity: 0 !important;
 }
 
+/* Center Bookmarks */
+#PlacesToolbarItems {
+  display: flex !important;
+  justify-content: center !important;
+}
+
 /* Hover effect for toolbar and bookmark icon/text */
 #navigator-toolbox:hover > #PersonalToolbar,
 #navigator-toolbox:hover #PlacesToolbarItems > .bookmark-item .toolbarbutton-icon,
