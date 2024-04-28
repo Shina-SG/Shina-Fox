@@ -71,16 +71,13 @@ tab.tabbrowser-tab *{
 }
 
 #nav-bar-customization-target,
-#PanelUI-button * {
+#PanelUI-button,
+#titlebar * {
 	z-index: 1;
 }
 
 #alltabs-button {
 	display: none;
-}
-
-#titlebar {
-	z-index: 1;
 }
 
 /*------------------------------------------------*/
