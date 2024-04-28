@@ -70,6 +70,16 @@ tab.tabbrowser-tab *{
     transition: opacity 0.3s ease !important;
 }
 
+#nav-bar-customization-target,
+#PanelUI-button,
+#titlebar * {
+	z-index: 1;
+}
+
+#alltabs-button {
+	display: none;
+}
+
 /*------------------------------------------------*/
 /* Remove line between website content and top bar */
 
