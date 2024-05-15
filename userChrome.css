@@ -1108,7 +1108,7 @@ tab,
 }
 
 @media (prefers-color-scheme: light)  {
-    #appcontent browser {
+    #appcontent .browserStack {
         border-radius: 15px !important;
         margin: 15px 15px 15px 15px !important;
         border: 3px solid rgba(51, 51, 51, 0.1);
@@ -1116,9 +1116,13 @@ tab,
         box-shadow: 0 0 10px 5px rgba(255,255,255,0.5);
     }
 
-    #appcontent browser:hover {
+    #appcontent .browserStack:hover {
         border: 3px solid rgba(51, 51, 51, 0.6);
         box-shadow: 0 0 10px 5px rgba(255,255,255,0.5);
+    }
+
+    .browserContainer {
+        border: none !important;
     }
 }
 
