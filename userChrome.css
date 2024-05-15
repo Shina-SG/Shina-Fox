@@ -1089,7 +1089,7 @@ tab,
 /* Browser Border */
 
 @media (prefers-color-scheme: dark) {
-    #appcontent .browserStack {
+    #main-window:not([sizemode="fullscreen"]) #appcontent .browserStack {
         border-radius: 15px !important;
         margin: 15px 15px 15px 15px !important;
         border: 3px solid rgba(0, 0, 0, 0);
@@ -1097,7 +1097,7 @@ tab,
         box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
     }
 
-    #appcontent .browserStack:hover {
+    #main-window:not([sizemode="fullscreen"]) #appcontent .browserStack:hover {
         border: 3px solid rgba(204, 204, 204, 0.6);
         box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
     }
@@ -1108,7 +1108,7 @@ tab,
 }
 
 @media (prefers-color-scheme: light)  {
-    #appcontent .browserStack {
+    #main-window:not([sizemode="fullscreen"]) #appcontent .browserStack {
         border-radius: 15px !important;
         margin: 15px 15px 15px 15px !important;
         border: 3px solid rgba(51, 51, 51, 0.1);
@@ -1116,7 +1116,7 @@ tab,
         box-shadow: 0 0 10px 5px rgba(255,255,255,0.5);
     }
 
-    #appcontent .browserStack:hover {
+    #main-window:not([sizemode="fullscreen"]) #appcontent .browserStack:hover {
         border: 3px solid rgba(51, 51, 51, 0.6);
         box-shadow: 0 0 10px 5px rgba(255,255,255,0.5);
     }
