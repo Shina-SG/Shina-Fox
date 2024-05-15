@@ -10,6 +10,7 @@
 /* Background Color */
 
 @media (prefers-color-scheme: dark) {
+#nav-bar,
 #navigator-toolbox,
 #sidebar-box,
 #tabbrowser-tabbox,
@@ -24,6 +25,7 @@ tab.tabbrowser-tab *{
   
 }
 @media (prefers-color-scheme: light)  {
+#nav-bar,
 #navigator-toolbox,
 #sidebar-box,
 #tabbrowser-tabbox,
@@ -37,20 +39,7 @@ tab.tabbrowser-tab *{
 }
 }
 
-@media (prefers-color-scheme: dark) {
-#navigator-toolbox  {
-  background: #1a1a1a !important;
-}
-}
-
-@media (prefers-color-scheme: light)  {
-#navigator-toolbox  {
-  background: #e6e6e6 !important;
-}
-}
-
-#PersonalToolbar,
-#nav-bar  {
+#PersonalToolbar  {
   background: transparent !important;
 }
 
@@ -76,13 +65,6 @@ tab.tabbrowser-tab *{
 #navigator-toolbox {
   border-bottom: var(--firefoxcss-top-bar-border-bottom-size) solid
     var(--firefoxcss-top-bar-border-bottom-color) !important;
-}
-
-/*------------------------------------------------*/
-/* Remove the all tab and new tab button */
-#alltabs-button,
-#tabs-newtab-button {
-  display: none !important;
 }
 
 /*------------------------------------------------*/
@@ -426,18 +408,6 @@ toolbar:not([customizing]) > #nav-bar-customization-target {
     #nav-bar {
         margin-left: 0 !important;
     }
-}
-
-/* Fix for Firefox 123 */
-#nav-bar:not([tabs-hidden="true"]) 
-{
-  position: static !important;;
-}
-
-#nav-bar-customization-target,
-#PanelUI-button {
-  position: relative  !important;
-  z-index: 3  !important;
 }
 
 /*------------------------------------------------*/
@@ -1119,32 +1089,34 @@ tab,
 /* Browser Border */
 
 @media (prefers-color-scheme: dark) {
-    #main-window:not([sizemode="fullscreen"]) #appcontent browser {
+    #appcontent .browserStack {
         border-radius: 15px !important;
         margin: 15px 15px 15px 15px !important;
         border: 3px solid rgba(0, 0, 0, 0);
         transition: border 0.3s ease;
         box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
-        clip-path: circle(80%) !important;
     }
 
-    #main-window:not([sizemode="fullscreen"]) #appcontent browser:hover {
+    #appcontent .browserStack:hover {
         border: 3px solid rgba(204, 204, 204, 0.6);
         box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+    }
+
+    .browserContainer {
+        border: none !important;
     }
 }
 
 @media (prefers-color-scheme: light)  {
-    #main-window:not([sizemode="fullscreen"]) #appcontent browser {
+    #appcontent browser {
         border-radius: 15px !important;
         margin: 15px 15px 15px 15px !important;
         border: 3px solid rgba(51, 51, 51, 0.1);
         transition: border 0.3s ease;
         box-shadow: 0 0 10px 5px rgba(255,255,255,0.5);
-        clip-path: circle(80%) !important;
     }
 
-    #main-window:not([sizemode="fullscreen"]) #appcontent browser:hover {
+    #appcontent browser:hover {
         border: 3px solid rgba(51, 51, 51, 0.6);
         box-shadow: 0 0 10px 5px rgba(255,255,255,0.5);
     }
@@ -1192,6 +1164,7 @@ tab,
   text-align: center  !important;
 }
 
-
-
-
+/* Hide Menu Bar (fix for navbar cutting off) */
+#menubar-items {
+    display: none !important;
+}
