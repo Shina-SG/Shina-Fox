@@ -78,6 +78,10 @@ Welcome to Shina Fox, a project that seeks to transform your Firefox experience 
 - Download the [latest version](https://github.com/Shina-SG/Shina-Fox/releases/latest) 
 - Unzip the downloaded files and transfer them into the `chrome` folder
 
+##### Step 5: Tabliss Extension For Fancy Startpage
+- Download Tabliss Extension https://tabliss.io/
+- Customize to your hearts content
+
 Restart Firefox to experience your new cozy haven! 💓🎉
 
 ## Feature Breakdown 🌟
