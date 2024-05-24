@@ -19,7 +19,7 @@ Welcome to Shina Fox, a project that seeks to transform your Firefox experience 
 ##### Step 1: Sidebery Configuration 🦔
 - Firstly, install the [Sidebery Addon](https://addons.mozilla.org/firefox/addon/sidebery/). 
 - Navigate to Sidebery's `Settings` ⚙️ --> `Navigation bar` 📍
-- Turn off the `Show navigation bar in one line` option.
+- Turn on the `Show navigation bar in one line` option.
 - Proceed to Sidebery's `Setting` ⚙️ --> `Style editor` 🎨
 - Finally, copy and paste the following CSS code snippet into the provided space:
 
@@ -77,6 +77,10 @@ Welcome to Shina Fox, a project that seeks to transform your Firefox experience 
 - Create a `chrome` folder if one doesn't already exist
 - Download the [latest version](https://github.com/Shina-SG/Shina-Fox/releases/latest) 
 - Unzip the downloaded files and transfer them into the `chrome` folder
+
+##### Step 5: Tabliss Extension For Fancy Startpage
+- Download Tabliss Extension https://tabliss.io/
+- Customize to your hearts content
 
 Restart Firefox to experience your new cozy haven! 💓🎉
 
