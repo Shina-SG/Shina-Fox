@@ -19,7 +19,7 @@ Welcome to Shina Fox, a project that seeks to transform your Firefox experience 
 ##### Step 1: Sidebery Configuration 🦔
 - Firstly, install the [Sidebery Addon](https://addons.mozilla.org/firefox/addon/sidebery/). 
 - Navigate to Sidebery's `Settings` ⚙️ --> `Navigation bar` 📍
-- Turn off the `Show navigation bar in one line` option.
+- Turn on the `Show navigation bar in one line` option.
 - Proceed to Sidebery's `Setting` ⚙️ --> `Style editor` 🎨
 - Finally, copy and paste the following CSS code snippet into the provided space:
 
